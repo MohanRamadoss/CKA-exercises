@@ -92,7 +92,7 @@ kubectl describe pod ds-one-<tab> | grep Image:    # <-- new pod should be 1.12.
   
 - Using kubectl run with --dry-run option to create yaml file, then add command to the yaml file.
   ```bash
-  kubectl run ubuntu-sleeper --generator=run-pod/v1 --image=ubuntu --dry-run -o yaml > ubuntu-sleeper.yaml
+  kubectl run ubuntu-sleeper --image=ubuntu --dry-run -o yaml > ubuntu-sleeper.yaml
   vi ubuntu-sleeper.yaml
   ```
   ```yaml
